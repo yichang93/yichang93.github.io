@@ -101,5 +101,6 @@
 @mixin px-hover {
 	&:hover {
 		@content;
+		cursor: pointer;
 	}
 }

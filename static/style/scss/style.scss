@@ -14,86 +14,6 @@
 /* Home Banner
 ---------------------------------*/
 
-.home-banner {
-	.ht-box {
-	    padding-left: 35px;
-		border-left: 5px solid $px-dark;
-	}
-
-	h1 {
-        font-weight: 600;
-		font-size: 70px;
-		@include down-md {
-			font-size: 60px;
-		}
-		@include down-sm {
-			font-size: 40px;
-		}
-	}
-	h2 {
-        font-weight: 500;
-	    font-size: 25px;
-	    @include down-md {
-			font-size: 22px;
-		}
-		@include down-sm {
-			font-size: 18px;
-		}
-	}
-}
-
-.home-banner-03 {
-	.ht-img {
-		width: 200px;
-		height: 200px;
-		display: inline-block;
-		vertical-align: top;
-		margin-bottom: 25px;
-		position: relative;
-		&:before {
-	        content: "";
-		    position: absolute;
-		    -webkit-animation: lds-dual-ring 1.2s linear infinite;
-		    -moz-animation: lds-dual-ring 1.2s linear infinite;
-		    animation: lds-dual-ring 1.2s linear infinite;
-		    -webkit-animation-play-state: paused;
-		    -moz-animation-play-state: paused;
-		    animation-play-state: paused;
-		    border-top: 110px solid $px-white;
-		    border-left: 110px solid $px-white;
-		    top: -10px;
-		    left: -10px;
-		    border-right: 110px solid transparent;
-		    border-bottom: 110px solid transparent;
-		    border-radius: 50%;
-		    z-index: 0;
-		}
-		.ht-img-in {
-			border-radius: 50%;
-			overflow: hidden;
-			position: relative;
-		}
-	}
-	h1 {
-        font-weight: 700;
-	    font-size: 40px;
-	    text-transform: uppercase;
-	}
-	h2 {
-        font-weight: 700;
-	    font-size: 18px;
-	}
-	.ht-box:hover {
-		.ht-img {
-			&:before {
-				-webkit-animation-play-state: running;
-				  -moz-animation-play-state: running;
-				  animation-play-state: running; 
-			}
-		}
-	}
-}
-
 @keyframes lds-dual-ring {
 	0% {
 		transform: rotate(0deg); 
@@ -753,30 +673,27 @@
 /* Design Overview 
 -----------------------*/
 .work-thumbnail {
-	box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
 	border-radius: 1px;
 	&:hover{
 		cursor: pointer;
 	}
 }
-.project-blurb {
-	margin-top: -10em;
-	padding: 35px;
-	color: $px-dark;
-	background: $px-white;
-	border-radius: 1px;
-	box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.3);
-
-	.m-btn-link {
-		color: $px-dark;
+.project-header{
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	h1 {
+		display: inline;
+		background-image: linear-gradient(rgba(234,35,64,0.3), rgba(234,35,64, 0.3));
+		background-size: 100% 10%;
+		background-repeat: no-repeat;
+		background-position: 0 bottom;
+		background-color: transparent;
+		padding: 0;
+		color: currentColor;
 	}
+}
 
-	&:hover {
-		background: $px-theme;
-		color: $px-white;
-		cursor: pointer;
-		.m-btn-link {
-			color: $px-white;
-		}
-	}
+.quotes {
+	padding-left: 35px;
+	border-left: 5px solid $px-dark;
 }

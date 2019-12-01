@@ -4,12 +4,16 @@
 	background-color: $px-theme;
 }
 
-.dark-bg {
-	background-color: $px-dark;
+.gray-bg {
+	background-color: $px-gray;
 }
 
 .white-bg {
 	background-color: $px-white;
+}
+
+.dark-bg {
+	background-color: $px-dark;
 }
 
 
@@ -31,4 +35,8 @@
 
 .theme-color {
 	color: $px-theme;
+}
+
+.medium-dark-color {
+	color: $px-medium-dark;
 }

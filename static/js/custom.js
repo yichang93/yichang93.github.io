@@ -76,15 +76,6 @@
         });
     }
 
-    /* ---------------------------------------------- /*
-	 * Search Box
-	/* ---------------------------------------------- */
-	NAY.SearchBox = function() {
-		var SearchToggle = $(".h_search")
-	 	SearchToggle.on("click", function() {
-	        $('.h-search-section').toggleClass("searh-form-open");
-    	});
-	}
 
 	NAY.HeaderHeight = function(){
 		var HHeight = $('.header-height .fixed-header-bar').height()
@@ -345,7 +336,13 @@
 		        }); 
             });
         }
-    }
+	}
+	
+	NAY.scrollHint = function() {
+		if ($("#scroll-hint").exists()){
+			$("#scroll-hint").addClass("slide-bottom")
+		}
+	}
 
 	/* ---------------------------------------------- /*
 	 * All Functions
@@ -386,12 +383,12 @@
 		NAY.Counter(),
 		NAY.MenuClose(),
 		NAY.Gallery(),
-		NAY.SearchBox(),
 		NAY.HeaderHeight(),
 		NAY.MegaMenu(),
 		NAY.ProgressBar(),
 		NAY.mTypeIt(),
 		NAY.Owl();
+		NAY.scrollHint();
 	});
 
 	// Document on Scrool

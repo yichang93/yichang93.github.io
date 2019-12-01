@@ -45,6 +45,16 @@
 		background: $px-white;
 		box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
 	}
+	.navbar-logo {
+		display: flex;
+		align-items: center;
+		color: $px-dark;
+		font-size: 1.25rem;
+		img {
+			height: 1.25rem;
+			margin-right: .25rem;
+		}
+	}
 }
 
 .main-navbar {
