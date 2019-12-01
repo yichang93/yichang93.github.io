@@ -1,0 +1,29 @@
+{
+  "name": "yichang93.github.io",
+  "version": "1.0.0",
+  "description": "Yichang's Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass static/style/master.scss -o static/style/",
+    "scss:watch": "node-sass -w static/style/master.scss -o static/style/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yichang93/yichang93.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "UX",
+    "Bootstrap4"
+  ],
+  "author": "Yichang Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yichang93/yichang93.github.io/issues"
+  },
+  "homepage": "https://github.com/yichang93/yichang93.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
