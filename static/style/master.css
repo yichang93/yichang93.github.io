@@ -5040,13 +5040,21 @@ h6 {
 .work-thumbnail {
   box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
   border-radius: 1px; }
+  .work-thumbnail:hover {
+    cursor: pointer; }
 
 .project-blurb {
   margin-top: -10em;
   padding: 35px;
+  color: #2d3142;
   background: #ffffff;
   border-radius: 1px;
   box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.3); }
+  .project-blurb .m-btn-link {
+    color: #2d3142; }
   .project-blurb:hover {
     background: #ef8354;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
+    .project-blurb:hover .m-btn-link {
+      color: #ffffff; }

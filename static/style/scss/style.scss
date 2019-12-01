@@ -755,16 +755,28 @@
 .work-thumbnail {
 	box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
 	border-radius: 1px;
+	&:hover{
+		cursor: pointer;
+	}
 }
 .project-blurb {
 	margin-top: -10em;
 	padding: 35px;
+	color: $px-dark;
 	background: $px-white;
 	border-radius: 1px;
 	box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.3);
 
+	.m-btn-link {
+		color: $px-dark;
+	}
+
 	&:hover {
 		background: $px-theme;
 		color: $px-white;
+		cursor: pointer;
+		.m-btn-link {
+			color: $px-white;
+		}
 	}
 }
