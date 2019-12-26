@@ -58,23 +58,6 @@
         });
     }
 
-    /*--------------------
-        * One Page
-    ----------------------*/
-    NAY.OnePageTop = function(){
-        $('.header-one-page a[href*="#"]:not([href="#"])').on('click', function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-              var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                  if (target.length) {
-                    $('html,body').animate({
-                      scrollTop: target.offset().top - 65,
-                      }, 1000);
-                      return false;
-                  }
-            }
-        });
-    }
 
 
 	NAY.HeaderHeight = function(){
@@ -378,7 +361,6 @@
 		NAY.CountTimer(),
 		NAY.HeaderFixd(),
 		NAY.OnePage(),
-		NAY.OnePageTop(),
 		NAY.Accordion(),
 		NAY.Counter(),
 		NAY.MenuClose(),

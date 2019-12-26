@@ -30,7 +30,7 @@
         </div>
         <!-- end page loading -->
 
-        <header class="header-nav header-one-page">
+        <header class="header-nav">
             <!-- Header Middle -->
             <div class="navbar navbar-default navbar-expand-lg main-navbar">
                 <div class="container">
@@ -38,7 +38,8 @@
                         <img src="static/img/logo.svg" alt="Yichang">
                         <span>Yichang</span>
                     </a>
-                    <div class="navbar-collapse justify-content-end collapse" id="navbar-collapse-toggle">
+                    <!-- TODO: navigation -->
+                    <!-- <div class="navbar-collapse justify-content-end collapse" id="navbar-collapse-toggle">
                         <ul class="nav navbar-nav">
                             <li><a class="nav-link" href="static/pages/studies.html">Case Studies</a></li>
                             <li><a class="nav-link" href="static/pages/about.html">About</a></li>
@@ -48,7 +49,8 @@
                         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle" aria-expanded="false">
                             <span class="icon-bar"></span>
                         </button>
-                    </div>
+                    </div> -->
+
                 </div>
             </div>
             <!-- End Header Middle -->
@@ -58,187 +60,100 @@
         <main>
             <!-- Intro Banner -->
             <section>
-                <div class="container full-screen">
-                    <div class="row screen-85 align-items-center p-50px-tb">
+                <div class="container">
+                    <div class="row full-screen align-items-center">
                         <div class="col-lg-12 text-center">
-                            <h4>Hi, I'm Yichang Li</h4>
-                            <h1 class="font-weight-bold">A UX designer and Full-stack Developer <h1>
-                            <h4>
-                                interested in interaction design, visual design and emerging technologies. <br>
-                                I work from a lifelong love for design + tech, <br>
-                                and a resolute desire to do something good.
-                            </h4>
-                            <div class="p-30px-t">
+                            <h5>
+                                Hi, I'm Yichang Li
+                            </h5>
+                            <div class="display-1">
+                                A experience designer & full stack developer who creates meaningful and delightful solutions through human-centred design.
+                            </div>
+                            <div class="p-2rem-tb">
                                 <a class="m-btn m-btn-radius m-btn-theme" href="CV_Yichang.pdf">Download CV</a>
                             </div>
+                            <span id="scroll-hint" class="text-center">
+                                <i class="fas fa-angle-double-down"></i>
+                            </span>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <span id="scroll-hint" class="text-center">
-                            <i class="fas fa-angle-double-down"></i>
-                        </span>
                     </div>
                 </div>
             </section>
             <!-- End Intro Banner -->
 
-            <!-- Design project 1 (Esplanade) -->
-            <section id="esplanadeRedesign" class="gray-bg">
+            <section id="case_study" class="gray-bg">
                 <div class="container">
-                    <header class="project-header">
-                        <h1>
-                            Esplanade Website Redesign
-                        </h1>
-                    </header>
-                    <div class="row m-50px-b">
-                        <div class="col-lg-5">
-                            <small>Concept · UI/UX Design</small>
-                            <div class="row m-15px-tb">
-                                <div class="col-3 text-right medium-dark-color">Description</div>
-                                <div class="col-9">To improve the user experience of Esplanade website by redesigning the Information Architecture and key pages layout.</div>
-                                <div class="col-3 text-right medium-dark-color m-15px-t">Skiils</div>
-                                <div class="col-9 m-15px-t">Content Inventory, User Interviews, Competitive Analysis, Tree testing, Card sorting, Modular Design, Prototyping, Usability testing </div>
-                                <div class="col-3 text-right medium-dark-color m-15px-t">Time Frame</div>
-                                <div class="col-9 m-15px-t">2 Weeks</div>
-                                <div class="col-3 text-right medium-dark-color m-15px-t">Role</div>
-                                <div class="col-9 m-15px-t">Product Designer</div>
-                                <div class="col-3 text-right medium-dark-color m-15px-t">Tools</div>
-                                <div class="col-9 m-15px-t">Axure RP, Treejack, Sketch, Post-it,</div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="portfolio-box-01">
+                                <div class="portfolio-img">
+                                    <img src="static/img/esplanade.png" title="" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <a href="static/pages/esplanade.html" class="gallery-link">
+                                        <h4>Redesigning the esplanade website</h4>
+                                        <p>(Concept) Website, Information Architecture </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="work-thumbnail">
-                                <a href="static/pages/esplanade.html">
-                                    <img src="static/img/esplanade.png">
-                                </a>
+                        <div class="col-lg-6">
+                            <div class="portfolio-box-01">
+                                <div class="portfolio-img">
+                                    <img src="static/img/ourbarehands.png" title="" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <a href="static/img/ourbarehands.png" class="gallery-link">
+                                        <h4>Our Barehands</h4>
+                                        <p>Mobile Design, Content Strategy</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p class="quotes">
-                        <a href="https://www.esplanade.com/">Esplanade</a> is a not-for-profit arts centre, socially motivated by the mission to entertain, engage, educate and inspire communities through the arts. Other than performing venues, the Esplanade also contains retail and meeting venues, as well as other lifestyle and arts related services which contribute a significant percentage to their total annual revenue (40%). 
-                    </p>
-                    
-                    <h3 class="m-50px-t">Research</h2>
-                    <h5 class="m-30px-t">What are the contents the website contains?</h5>
-                    <p>
-                        We started the project by conducting content inventory to get an overview of the existing contents on the website.
-                    </p>
-
-                    <h5 class="m-30px-t">User research & Interviews</h5>
-                    <p>
-                        Derived from business annual report for Esplanade and the content inventory we came up with 4 main scenarios and tasks. We conducted interviews and usability testing on the existing site to see how users navigate to find the tasks and scenarios given. We wanted to understand what are the reasons and objectives of people who use the site? And we also wanted evaluate the heuristics of the website before coming up with a problem statement and hypothesize.
-                    </p>
-                
-                    <h5 class="m-30px-t">Issue Prioritisation</h5>
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <img src="static/img/esplanade_rainbow.png">
-                        </div>
-                        <div class="col-lg-7">
-                            <ol>
-                                <li>
-                                    Confusing Double Navigation Bar & Too Many Menu Items
-                                    <p class="medium-dark-color ">
-                                    5/6 users had difficulty finding the ‘Visitor Guide’<br>
-                                    3/6 users had difficulty locating the ‘Eat & Drink’ menu item
-                                    3/6 users were unsure about the difference between 'What's On' and 'Explore'
-                                    </p>
-                                </li>
-                                <li>
-                                    Cluttered Content
-                                    <p class="medium-dark-color ">
-                                    3/6 users could not figure out which MRT station was closest as they were distracted by the map or did not know to scroll further down for the info
-                                    </p>
-                                </li>
-                                <li>
-                                    Insufficient Information
-                                    <p class="medium-dark-color ">
-                                    4/6 users were frustrated at having to click on each individual venue page to access basic venue information such as seating capacity
-                                    </p>
-                                </li>
-                                <li>
-                                    Unclear CTA
-                                    <p class="medium-dark-color ">
-                                    3/6 users did not notice the online venue request form
-                                    </p>
-                                </li>
-                                <li>
-                                    Inflexible Filters and Too Many Results
-                                    <p class="medium-dark-color ">
-                                    6/6 users manually scrolled through multiple pages to find an appropriate event
-                                    </p>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- End project 1 -->
-
-            <!-- Design project 2 (Two Feet)-->
-            <section class="dark-bg white-color">
-                <div class="container">
-                    <header class="project-header">
-                        <h1>
-                            TwoFeet
-                        </h1>
-                    </header>
-                    <div class="row">
+                    <div class="row m-2rem-t">
                         <div class="col-lg-4">
-                            <div class="">
-                                <small>Concept · Product Design</small>
-                                <p>A digital travel guide service for tourists to tailor the travel experience based on their interests and to provide timely information.</p>
-                                <a class="m-btn-link" href="static/pages/twofeet.html"> Read Case Study <i class="fas fa-chevron-right"></i> 
+                            <div class="portfolio-box-01">
+                                <div class="portfolio-img">
+                                    <img src="static/img/huemail.png" title="" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <a href="static/img/huemail.png" class="gallery-link">
+                                        <h4>Protected: Enterprised Email Security Features</h4>
+                                        <p>UX, Mobile Design, Web Development</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <div class="work-thumbnail">
-                                <a href="static/pages/twofeet.html">
-                                    <img src="static/img/twofee.jpg">
-                                </a>
+                            <div class="portfolio-box-01">
+                                <div class="portfolio-img">
+                                    <img src="static/img/zalora.png" title="" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <a href="static/img/zalora.png" class="gallery-link">
+                                        <h4>ZALORA Design System Library</h4>
+                                        <p>Design System, Design Patterns, React, CSS</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
-            <!-- End project 2 -->
-            <!-- Previous Jobs -->
-            <section>
-                <h2 class="text-center">Other Projects</h2>
-                <div class="container">
-                    <div class="row">
-                        <!-- feaure box -->
-                        <div class="col-sm-6 col-lg-4 m-15px-tb">
-                            <div class="feature-box-3">
-                                <div class="icon">
-                                    <i class="icon-desktop"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Design System (Component Libraries)</h5>
-                                    <p>I led the <a href="" >CSS</a> and <a href="">React</a> component libraries development in ZALORA.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / -->
-                        <!-- feaure box -->
-                        <div class="col-sm-6 col-lg-4 m-15px-tb">
-                            <div class="feature-box-3">
-                                <div class="icon">
-                                    <i class="icon-pricetags"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Design System (Design & Documentation)</h5>
-                                    <p>Designed and implemented the portal for ZALORA/styleguide. I am also the main contributor of the guides for <a href="">grid system</a>, <a href="" >typography</a>, and <a href="">color</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / -->
-                    </div>
-                </div>
-            </section>
-            <!-- End Previous Jobs-->
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
 
         </main>
         <!-- main end -->

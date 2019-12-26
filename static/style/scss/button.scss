@@ -7,7 +7,7 @@
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 600; 
+	font-weight: 400; 
 	color: $px-theme;
 	border-bottom: 2px solid currentColor;
 	&:hover {
@@ -25,7 +25,7 @@
     padding: 12px 25px;
     font-size: 14px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
 	@include transition(ease-in-out all 0.55s);
 	text-align: center;

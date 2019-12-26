@@ -50,6 +50,7 @@
 		align-items: center;
 		color: $px-dark;
 		font-size: 1.25rem;
+		font-family: $px-heading-font-family;
 		img {
 			height: 1.25rem;
 			margin-right: .25rem;
@@ -61,7 +62,7 @@
 	padding: 0;
 	.logo-text {
 	    font-size: 22px;
-	    font-weight: 600;
+	    font-weight: 400;
 	    line-height: 32px;
 	    color: $px-dark;
 	    display: inline-block;
@@ -238,7 +239,7 @@
 				}
 				.label {
 				    margin: 0;
-				    font-weight: 800;
+				    font-weight: 700;
 				    font-size: 24px;
 				    text-transform: uppercase;
 				    line-height: 24px;

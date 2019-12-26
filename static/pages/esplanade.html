@@ -12,13 +12,12 @@
         <!-- title -->
         <title>Yichang's Portfolio</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
         <!-- plugin CSS -->
-        <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="static/plugin/font-awesome/css/all.min.css" rel="stylesheet">
-        <link href="static/plugin/et-line/style.css" rel="stylesheet">
+        <link href="../plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../plugin/font-awesome/css/all.min.css" rel="stylesheet">
         <!-- theme css -->
-        <link href="static/style/master.css" rel="stylesheet">
+        <link href="../style/master.css" rel="stylesheet">
     </head>
 
     <!-- Body Start -->
@@ -30,20 +29,18 @@
         </div>
         <!-- end page loading -->
 
-        <header class="header-nav header-one-page">
+        <header class="header-nav">
             <!-- Header Middle -->
             <div class="navbar navbar-default navbar-expand-lg main-navbar">
                 <div class="container">
-                    <div class="navbar-brand">
-                        <a href="/">
-                            <img src="static/img/logo.svg" alt="Yichang">Yichang
-                        </a>
-                    </div>
-                    
+                    <a class="navbar-logo" href="/">
+                        <img src="../img/logo.svg" alt="Yichang">
+                        <span>Yichang</span>
+                    </a>
                     <div class="navbar-collapse justify-content-end collapse" id="navbar-collapse-toggle">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav-link" href="static/pages/studies.html">Case Studies</a></li>
-                            <li><a class="nav-link" href="static/pages/about.html">About</a></li>
+                            <li><a class="nav-link" href="../pages/studies.html">Case Studies</a></li>
+                            <li><a class="nav-link" href="../pages/about.html">About</a></li>
                         </ul>
                     </div>
                     <div class="extra-menu d-flex align-items-center">
@@ -58,17 +55,280 @@
 
         <!-- Main -->
         <main>
-            <!-- summary Banner -->
-            <section>
+            <!-- Design project 1 (Esplanade) -->
+            <section id="esplanade_project_overview">
                 <div class="container">
-                    <div class="row full-screen align-items-center p-100px-tb">
-                        
+                    <div class="m-3rem-b m-6rem-t">
+                        <h1>Redesigning the esplanade website</h1><br>
+                        <small>Concept · UI/UX Design</small>
+                        <div class="row m-1rem-b m-3rem-t">
+                            <div class="col-lg-6">
+                                <h6>Duration</h6>
+                                <div> 2 Weeks</div>
+                                <h6 class="m-1.5rem-t">Role</h6>
+                                <div>UX Designer/ Prototyper</div>
+                                <h6 class="m-1.5rem-t">Tools</h6>
+                                <div>Axure PR, Treejack, Sketch, Post-it</div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h6>Overview</h6>
+                                <div>Working alongside with 2 teammates, Rina (Product Manager) and Han Loong (User Researcher), our main task was to redesign the Information Architecture (IA) and key pages layout/wireframes of esplanade. We proceeded the project by following the design thinking process.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- End summary Banner -->
+            <section id="esplanade_project_goal">
+                <div class="container">
+                    <div class="row m-6rem-t">
+                        <div class="col">
+                            <div class="font-italic medium-dark-color text-center">
+                                “<a href="https://www.esplanade.com/">Esplanade</a> is a not-for-profit arts centre, socially motivated by the mission to entertain, engage, educate and inspire communities through the arts. Other than performing venues, the Esplanade also contains retail and meeting venues, as well as other lifestyle and arts related services which contribute a significant percentage to their total annual revenue (40%). ”
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-6rem-t">
+                        <div class="col">
+                            <h3>The Process</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <img class="m-2rem-t " src="../img/design_process.png"/>
+                        </div>
+                    </div>
+                    <!-- <img class="m-6rem-t" src="../img/esplanade.png"> -->
 
-           
+                    <div class="row m-6rem-t">
+                        <div class="col-lg-6">
+                            <h3>User Research</h3>
+                        </div>
+                        <div class="col-lg-6 m-3rem-t">
+                            <h5>What are the contents the website contains?</h5>
+                            <p>
+                                We started the project by conducting content inventory to get an overview of the existing contents on the website.
+                            </p>
+        
+                            <h5>User research & Interviews</h5>
+                            <p>
+                                Derived from business annual report for Esplanade and the content inventory we came up with 4 in scenarios and tasks. We conducted interviews and usability testing on the original website to see how users navigate to find the tasks and scenarios given. We wanted to understand what are the reasons and objectives of people who use the site? And we also wanted evaluate the heuristics of the website before coming up with a problem statement and hypothesize.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row m-6rem-t">
+                        <div class="offset-lg-6 col-lg-6">
+                            <h5>Audience Groups</h5>
+                            <div class="medium-dark-color m-0rem-t">
+                                On synthesizing our user research we could define 2 groups of audience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-lg-6 col-lg-3 m-1rem-t">
+                            <svg class="icon theme-color"><use xlink:href="symbol-defs.svg#icon-casual_art"></use></svg>
+                            <h5>Casual Arts-goers</h5>
+                            <div class="font-italic">“I like to make the most of my weekends by checking out interesting events. I also like trying out cool bars and restaurants. ”</div>
+                        </div>
+                        <div class="col-lg-3 m-1rem-t">
+                            <svg class="icon theme-color"><use xlink:href="symbol-defs.svg#icon-aficionados"></use></svg>
+                            <h5>Avid Aficionados</h5>
+                            <div class="font-italic">“As part of a performance group, it is important for us to be able to quickly find information on venues so that we can book and plan our performances easily.”</div>
+
+                        </div>
+                    </div>
+                    <div class="rol justify-content-center">
+                        <div class="col">
+                            <img src="../img/docs.png"/>
+                        </div>
+                    </div>
+                    <div class="row m-6rem-t">
+                        <div class="col-lg-5">
+                            <h3>Issue Prioritisation</h3>
+                        </div>
+                        <div class="offset-lg-1 col-lg-6 m-3rem-t">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <svg class="icon theme-color"><use xlink:href="symbol-defs.svg#icon-no_1"></use></svg>
+                                    <h5 class="m-1rem-t">Confusing Double Navigation Bar & Too Many Menu Items</h5>
+                                    <ul class="medium-dark-color">
+                                        <li>
+                                            5/6 users had difficulty finding the ‘Visitor Guide’
+                                        </li>
+                                        <li>
+                                            3/6 users had difficulty locating the ‘Eat & Drink’ menu item 3/6 users were unsure about the difference between ‘What’s On’ and ‘Explore’
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <svg class="icon theme-color"><use xlink:href="symbol-defs.svg#icon-no_2"></use></svg>
+                                    <h5 class="m-1rem-t">Cluttered and Insufficient Information</h5>
+                                    <ul class="medium-dark-color">
+                                        <li>3/6 users was uncertain about the type of food the restaurant serves</li>
+                                        <li>4/6 users were frustrated at having to click on each individual venue page to access basic venue information such as seating capacity</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <svg class="icon m-2rem-t theme-color"><use xlink:href="symbol-defs.svg#icon-no_3"></use></svg>
+                                    <h5 class="m-1rem-t">Inflexible Filters and Too Many Results</h5>
+                                    <ul class="medium-dark-color">
+                                        <li>6/6 users manually scrolled through multiple pages to find an appropriate event</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="col-lg-5">
+                            <h3>Revised Information Architecture</h3>
+                            <div class="m-0rem-t medium-dark-color">To address issue with the navigation, we needed to revise the information architecture of the site.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="col-lg-7">
+                            <img src="../img/card_sorting.png">
+                        </div>
+                        <div class="offset-lg-1 col-lg-4">
+                            <h6>Card sorting</h6>
+                            <p>We used open card sorting methodology to better understand how users group concepts and label the groups.</p>
+                        </div>
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="offset-lg-8 col-lg-4 m-3rem-t">
+                            <h6>Tree Testing</h6>
+                            <p>We re-designed the grouping and re-labeled some of the concepts based on the response from card sorting, we conducted a tree testing section to test our revised architecture.</p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h1>88%</h1> ends up at the correct answer 
+                                </div>
+                                <div class="col-lg-6">
+                                    <h1>79%</h1> answers chosen without backtracking
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="esplanade_project_prototype" class="gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h3>Prototype + Result</h3>
+                            <div class="medium-dark-color m-0rem-t">We set up a hi-fi clickable prototype using Axure PR to provide usability insights.</div>
+                        </div>
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="w-100"></div>
+                        <div class="col-lg-7">
+                            <img src="../img/nav_redesign.png">
+                        </div>
+                        <div class="offset-lg-1 col-lg-4">
+                            <h5>New Navigation Bar & Mega Menu</h5>
+                            <div>
+                                Derived from tree testing result, we reduced the number to categories in the global navigation and relabeled the categories with more intuitive labels.
+                            </div>
+                            <br>
+                            <div>
+                                With the new single line design, the behavior of the navigation bar is more consistent too. On the original website, user can hover the categories in the second row to trigger the mega menu. But, categories in the first row are not hoverable. And user can only click them to open the corresponding page.
+                            </div>
+                            <br>
+                            <div>
+                                During the usability testing on the version 1, 2/5 testers accidentally dismissed the mega menu due to the gap between the maga menu and navigation bar. Thus, in version 2, we removed the gap to provide a smoother experience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-10rem-t">
+                        <div class="w-100"></div>
+                        <div class="col-lg-5">
+                            <h5>New Card Template</h5>
+                            <div>
+                                From the usability testing on the original website, the testers either couldn't find the information buried in the paragraghs of text or they had to click the card one by one and read some basic information in the detail view. 
+                            </div>
+                            <br>
+                            <div>
+                                The new card design makes the essential information right in front of users, and uses bullet points, and typographic hierarchy to allow readers to quickly scan for information.
+                            </div>
+                            <br>
+                            <div>
+                                Lastly, we also introduced a visual cue to show the card is clickabel.
+                            </div>
+                        </div>
+                        <div class="offset-lg-1 col-lg-6">
+                            <img src="../img/card_redesign.png">
+                        </div>
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="w-100"></div>
+                        <div class="col-lg-7">
+                            <img src="../img/filter_redesign.png">
+                        </div>
+                        <div class="offset-lg-1 col-lg-4">
+                            <h5>New Filters </h5>
+                            <div>
+                                Finding events is the most important feature people use the esplanade website for. However, the current filter design doesn't allow user to apply multiple filters, it works more like a two-level navigation. 
+                            </div>
+                            <br>
+                            <div>
+                                The first issue our new filter design addressed is to support applying multiple filters. 
+                            </div>
+                            <br>
+                            <div>
+                                Additionally, from the usability testing on the original website, we also noticed that people liked to scroll down and had a overview of the number of results. Thus, we also introduced the result count so that users can adjust the filters to get and proper number of results.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="esplanade_project_mobile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h3>Responsive Design</h3>
+                            <div class="medium-dark-color m-0rem-t">
+                                We also redesigned the mobile website based on our new desktop site design.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="../img/mobile.png"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>Homepage & Navigation</h5>
+                            <p>We added a easy reach button to the bottom of navigation.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Quick filters & Back-to-top button</h5>
+                            <p>For events list page, a set of most-used filters is added to the top to allow users to quickly filter the events. Additionally, a back-to-top button was added to allow user to easily browse the content.</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5>Scrollable tabs</h5>
+                            <p>For pages with secondary navigation, we introduced a scrollable tabs. User can easily swip left and right to switch between tabs.</p>
+                        </div>
+                    </div>
+                    <div class="row m-3rem-t">
+                        <div class="col">
+                            <h3>What's Next</h3>
+                            <div>
+                                Moving forward, there are definitely a couple of areas which can be improved on. 
+                                Schools is one of the target customer segments of esplanade. Due the time and resource constraints, we couldn't conduct any research on this customer segment, and thus the school related features are out of the scope for this project.
+                            </div>
+                            <br>
+                            <div>
+                                We would also like to present our solution to esplanade's stakeholders and get their thoughts and feedback on real-world problem situations that we can solve. Creating products that solve real problems with a purpose, will create a sense achievement for me.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End project 1 -->
+        </main>
+        <!-- main end -->
         <!-- Footer-->
         <footer class="footer footer-dark">
             <div class="footer-top">
@@ -88,20 +348,21 @@
         
 
         <!-- jquery -->
-        <script src="static/js/jquery-3.2.1.min.js"></script>
-        <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery-migrate-3.0.0.min.js"></script>
         <!-- end jquery -->
         <!-- appear -->
-        <script src="static/plugin/appear/jquery.appear.js"></script>
+        <script src="../plugin/appear/jquery.appear.js"></script>
         <!-- end appear -->
         <!--bootstrap-->
-        <script src="static/plugin/bootstrap/js/popper.min.js"></script>
-        <script src="static/plugin/bootstrap/js/bootstrap.js"></script>
+        <script src="../plugin/bootstrap/js/popper.min.js"></script>
+        <script src="../plugin/bootstrap/js/bootstrap.js"></script>
         <!--end bootstrap-->
         <!-- End -->
 
         <!-- custom js -->
-        <script src="static/js/custom.js"></script>
+        <script src="../js/custom.js"></script>
+        <script defer src="https://i.icomoon.io/public/temp/0fb3ad0936/UntitledProject/svgxuse.js"></script>
         <!-- end -->
 
         <!-- end body -->
