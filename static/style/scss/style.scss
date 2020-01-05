@@ -441,3 +441,11 @@
 		background-image: url('../img/esplanade_bg.png');
 	}
 }
+
+#zalora_project_overview {
+	background-image: url('../img/esplanade_bg_sm.png');
+	background-size: cover;
+	@media (min-width: 576px) {
+		background-image: url('../img/zalora_bg.png');
+	}
+}

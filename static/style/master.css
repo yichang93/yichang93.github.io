@@ -28,7 +28,7 @@ Table of contents
 24) list
 25) space
 */
-@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato:300,300i,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,300i,400,700&display=swap");
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -484,7 +484,7 @@ h1,
 h2,
 .h3,
 h3 {
-  font-family: "Fredericka the Great", serif; }
+  font-family: "Abril Fatface", serif; }
 
 .h1,
 h1 {
@@ -631,7 +631,7 @@ h6 {
     align-items: center;
     color: #1c1d24;
     font-size: 1.25rem;
-    font-family: "Fredericka the Great", serif; }
+    font-family: "Abril Fatface", serif; }
     .header-nav .navbar-logo img {
       height: 1.25rem;
       margin-right: .25rem; }
@@ -4699,3 +4699,10 @@ h6 {
   @media (min-width: 576px) {
     #esplanade_project_overview {
       background-image: url("../img/esplanade_bg.png"); } }
+
+#zalora_project_overview {
+  background-image: url("../img/esplanade_bg_sm.png");
+  background-size: cover; }
+  @media (min-width: 576px) {
+    #zalora_project_overview {
+      background-image: url("../img/zalora_bg.png"); } }

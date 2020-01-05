@@ -66,18 +66,6 @@
 	}
 
 	/* ---------------------------------------------- /*
-	 * Mega Menu
-	/* ---------------------------------------------- */
-
-	NAY.MegaMenu = function() {
-		var mDropdown = $(".m-dropdown-toggle") 
-		mDropdown.on("click", function() {
-	        $(this).parent().toggleClass("open-menu-parent");
-	        $(this).next('ul').toggleClass("open-menu");
-	        $(this).toggleClass("open");
-	    });
-	}
-	/* ---------------------------------------------- /*
 		* accordion
 	/* ---------------------------------------------- */
 	NAY.Accordion = function() {
@@ -124,52 +112,12 @@
 	    }
 	  }
 
+	NAY.fadein = function () {
+		if($(".fade_in").exists()) {
+			$((".fade_in").fa)
+		}
+	}
 
-    /*--------------------
-    * OwlSlider
-    ----------------------*/
-    NAY.Owl = function () {
-      var owlslider = jQuery("div.owl-carousel");
-      if(owlslider.length > 0) {  
-         loadScript(plugin_track + 'owl-carousel/js/owl.carousel.min.js', function() {
-           owlslider.each(function () {
-            var $this = $(this),
-                $items = ($this.data('items')) ? $this.data('items') : 1,
-                $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
-                $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
-                $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
-                $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
-                $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
-                $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
-                $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-                $CenterSlider = ($this.data('center')) ? $this.data('center') : false,
-                $space = ($this.attr('data-space')) ? $this.data('space') : 30;    
-           
-                $(this).owlCarousel({
-                    loop: $loop,
-                    items: $items,
-                    responsive: {
-                      0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
-                      480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-                      768:{items: $this.data('sm-items') ? $this.data('sm-items') : 2},
-                      980:{items: $this.data('md-items') ? $this.data('md-items') : 3},
-                      1200:{items: $items}
-                    },
-                    dots: $navdots,
-                    autoplayTimeout:$autospeed,
-                    smartSpeed: $smartspeed,
-                    autoHeight:$autohgt,
-                    center:$CenterSlider,
-                    margin:$space,
-                    nav: $navarrow,
-                    navText:["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
-                    autoplay: $autoplay,
-                    autoplayHoverPause: true   
-                }); 
-           }); 
-         });
-      }
-    }
 
 	/* ---------------------------------------------- /*
      * lightbox gallery
@@ -206,51 +154,7 @@
     	}
     }
 
-     /*--------------------
-    * Masonry
-    ----------------------*/
-    NAY.masonry = function () {
-    	var portfolioWork = $('.portfolio-content');
-    	if ($(".portfolio-content").exists()){
-    		loadScript(plugin_track + 'isotope/isotope.pkgd.min.js', function() {
-    			if ($(".portfolio-content").exists()){
-					    $(portfolioWork).isotope({
-					      resizable: false,
-					      itemSelector: '.grid-item',
-					      layoutMode: 'masonry',
-					      filter: '*'
-					    });
-					    //Filtering items on portfolio.html
-					    var portfolioFilter = $('.filter li');
-					    // filter items on button click
-					    $(portfolioFilter).on( 'click', function() {
-					      var filterValue = $(this).attr('data-filter');
-					      portfolioWork.isotope({ filter: filterValue });
-					    });
-					    //Add/remove class on filter list
-					    $(portfolioFilter).on( 'click', function() {
-					      $(this).addClass('active').siblings().removeClass('active');
-					    });
-    			}
-    		});
-    	}
-	}
 
-	/*--------------------
-        * Progress Bar 
-    ----------------------*/
-    NAY.ProgressBar = function(){
-        $(".skill-bar .skill-bar-in").each(function () {
-          var bottom_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_window = $(window).scrollTop() + $(window).height();
-          var progressWidth = $(this).attr('aria-valuenow') + '%';
-          if(bottom_window > bottom_object) {
-            $(this).css({
-              width : progressWidth
-            });
-          }
-        });
-    }
 
     /*--------------------
         * pieChart
@@ -291,20 +195,6 @@
       }
     }
 
-    /*--------------------
-        * Countdown
-    ----------------------*/
-    var $count_timer = $('.count-down');
-    NAY.CountTimer = function () {
-        if ($count_timer.exists()) {
-            loadScript(plugin_track + 'count-down/jquery.downCount.js', function() {
-                $count_timer.downCount({
-                    date: '12/25/2022 12:00:00', // Month/Date/Year HH:MM:SS
-                    offset: -4
-                });
-            });
-        }
-    }
 
     NAY.mTypeIt = function() {
     	if ($("#type-it").exists()){
@@ -326,6 +216,8 @@
 			$("#scroll-hint").addClass("slide-bottom")
 		}
 	}
+
+	
 
 	/* ---------------------------------------------- /*
 	 * All Functions
@@ -352,13 +244,11 @@
 
 	// Window on Load
 	$(window).on("load", function(){
-		NAY.masonry(),
 		NAY.PreLoad();
 	});
 	// Document on Ready
 	$(document).on("ready", function(){
 		NAY.pieChart(),
-		NAY.CountTimer(),
 		NAY.HeaderFixd(),
 		NAY.OnePage(),
 		NAY.Accordion(),
@@ -366,11 +256,9 @@
 		NAY.MenuClose(),
 		NAY.Gallery(),
 		NAY.HeaderHeight(),
-		NAY.MegaMenu(),
-		NAY.ProgressBar(),
 		NAY.mTypeIt(),
-		NAY.Owl();
 		NAY.scrollHint();
+		NAY.fadein();
 	});
 
 	// Document on Scrool
