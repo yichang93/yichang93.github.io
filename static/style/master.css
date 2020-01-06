@@ -29,33 +29,50 @@ Table of contents
 25) space
 */
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,300i,400,700&display=swap");
-@-webkit-keyframes slide-bottom {
+.shake-vertical {
+  display: block;
+  -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both;
+  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both; }
+
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  80% {
+    -webkit-transform: translateY(3.2px);
+    transform: translateY(3.2px); }
+  90% {
+    -webkit-transform: translateY(-3.2px);
+    transform: translateY(-3.2px); } }
+
+.fade_in {
+  opacity: 0; }
+
+.slide-top {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes slide-top {
   0% {
+    opacity: 0;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); } }
-
-@keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); } }
-
-.slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s 2 backwards;
-  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s 2 backwards; }
-
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh + 128px);
-  overflow: hidden; }
+    opacity: 1;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); } }
 
 .circles li {
   position: absolute;
@@ -4707,5 +4724,18 @@ h6 {
     #zalora_project_overview {
       background-image: url("../img/zalora_bg.png"); } }
 
-.fade_in {
-  opacity: 0; }
+#home_brand_statement {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  #home_brand_statement .container {
+    position: absolute;
+    z-index: 2; }
+  #home_brand_statement .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 128px);
+    overflow: hidden;
+    z-index: 1; }
