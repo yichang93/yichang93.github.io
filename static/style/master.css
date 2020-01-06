@@ -57,7 +57,7 @@ Table of contents
     -webkit-transform: translateY(-3.2px);
     transform: translateY(-3.2px); } }
 
-.fade_in {
+.hideme {
   opacity: 0; }
 
 .slide-top {
@@ -73,6 +73,14 @@ Table of contents
     opacity: 1;
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px); } }
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 128px);
+  overflow: hidden; }
 
 .circles li {
   position: absolute;
@@ -4723,19 +4731,3 @@ h6 {
   @media (min-width: 576px) {
     #zalora_project_overview {
       background-image: url("../img/zalora_bg.png"); } }
-
-#home_brand_statement {
-  position: relative;
-  height: 100vh;
-  overflow: hidden; }
-  #home_brand_statement .container {
-    position: absolute;
-    z-index: 2; }
-  #home_brand_statement .circles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh + 128px);
-    overflow: hidden;
-    z-index: 1; }
