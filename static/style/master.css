@@ -4706,3 +4706,6 @@ h6 {
   @media (min-width: 576px) {
     #zalora_project_overview {
       background-image: url("../img/zalora_bg.png"); } }
+
+.fade_in {
+  opacity: 0; }
