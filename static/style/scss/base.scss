@@ -112,18 +112,32 @@ h3 {
 
 .h1,
 h1 {
-	font-size: $px-h1-font;
-	margin-top: 3rem;
+	font-size: $px-h1-font * .7;
+	margin-top: 3rem * .7;
+	@media (min-width: 576px) {
+		font-size: $px-h1-font;
+		margin-top: 3rem;
+	}
 }
 .h2,
 h2 {
-	font-size: $px-h2-font;
-	margin-top: 3rem;
+	
+	font-size: $px-h2-font * .7;
+	margin-top: 2.5rem * .7;
+	@media (min-width: 576px) {
+		font-size: $px-h2-font;
+		margin-top: 2.5rem;
+	}
 }
 .h3,
 h3 {
-	font-size: $px-h3-font;
-	margin-top: 3rem;
+	font-size: $px-h3-font * .7;
+	margin-top: 2rem * .7;
+	@media (min-width: 576px) {
+		font-size: $px-h3-font;
+		margin-top: 2rem;
+	}
+	
 }
 .h4,
 h4 {
