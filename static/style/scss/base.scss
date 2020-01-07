@@ -5,7 +5,7 @@ body {
 	font-family: $px-font-family;
 	font-size: $px-base-font;
 	color: $px-body-color;
-	font-weight: 300;
+	font-weight: $px-body-weight;
 	line-height: 1.6;
 	font-smoothing: antialiased;
 }
@@ -105,6 +105,9 @@ h2,
 .h3,
 h3 {
 	font-family: $px-heading-font-family;
+	font-weight: $px-top-heading-weight;
+	letter-spacing: -2px;
+	text-transform: uppercase;
 }
 
 .h1,
@@ -130,7 +133,7 @@ h4 {
 .h5,
 h5 {
 	font-size: $px-h5-font;
-	font-weight: 400;
+	font-weight: $px-h5-font-weight;
 	margin-top: 1rem;
 	margin-bottom: .5rem;
 }

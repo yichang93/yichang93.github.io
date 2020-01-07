@@ -1,6 +1,6 @@
 .footer {
 	&.footer-dark {
-		background: #0c0c17;
+		background: $px-dark;
 	}
 }
 .footer-top {
@@ -20,22 +20,6 @@
 	    margin: 0 0 30px;
 	    .footer-dark & {
 			color: $px-white;
-		}
-	}
-	.nav {
-		li:not(:first-child) {
-			margin-top: 8px;
-		}
-		a {
-		    font-size: 14px;
-		    font-weight: 400;
-		    display: inline-block;
-		    .footer-dark & {
-		    	color: #999999;
-				&:hover {
-		    		color:$px-white;
-		    	}
-			}
 		}
 	}
 	.fot-logo {
