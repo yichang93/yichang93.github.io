@@ -1,16 +1,79 @@
-.sm-title {
-	position: relative;
-	h5{
-	    font-size: 28px;
-		font-weight: 600;
-		position: relative;
+.section-title {
+	h2 {
+        font-weight: 700;
+	    font-size: 45px;
+	    margin: 0;
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: top;
+	    z-index: 1;
+	    @include down-md {
+	    	font-size: 42px;
+	    }
+	    @include down-sm {
+	    	font-size: 32px;
+	    }
+	    &:after {
+    	    content: "";
+		    position: absolute;
+		    bottom: 5px;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    height: 3px;
+		    opacity: 0.2;
+		    z-index: -1;
+		    background: $px-theme;
+	    }
 	}
-	i {
-	    position: absolute;
-	    font-size: 60px;
-	    top: -9px;
-	    right: 0;
-	    opacity: 0.1;
+	h3 {
+	    font-weight: 700;
+	    font-size: 35px;
+	    margin: 0;
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: top;
+	    z-index: 1;
+	    padding: 0 0 6px;
+	    @include down-md {
+	    	font-size: 32px;
+	    }
+	    @include down-sm {
+	    	font-size: 28px;
+	    }
+	    &:after {
+	        content: "";
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    right: 30%;
+		    margin: auto;
+		    height: 2px;
+		    z-index: -1;
+		    background: $px-theme;
+	    }	
+	}
+	p {
+		margin: 10px 0 0;
+		font-size: 18px;
+		@include down-md {
+	    	font-size: 17px;
+	    }
+	    @include down-sm {
+	    	font-size: 16px;
+	    }
+		&.small {
+			margin: 8px 0 0;
+		    font-size: 14px;
+		    letter-spacing: 2px;
+		}
+	}
+	&.text-center {
+		h3 {
+			&:after {
+				left: 30%;
+			}
+		}
 	}
 }
 

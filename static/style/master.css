@@ -1065,18 +1065,74 @@ h6 {
     .footer-dark .footer-bottom p {
       color: #999999; }
 
-.sm-title {
-  position: relative; }
-  .sm-title h5 {
-    font-size: 28px;
-    font-weight: 600;
-    position: relative; }
-  .sm-title i {
+.section-title h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1; }
+  @media (max-width: 991px) {
+    .section-title h2 {
+      font-size: 42px; } }
+  @media (max-width: 767px) {
+    .section-title h2 {
+      font-size: 32px; } }
+  .section-title h2:after {
+    content: "";
     position: absolute;
-    font-size: 60px;
-    top: -9px;
+    bottom: 5px;
+    left: 0;
     right: 0;
-    opacity: 0.1; }
+    margin: auto;
+    height: 3px;
+    opacity: 0.2;
+    z-index: -1;
+    background: #97e5ef; }
+
+.section-title h3 {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  padding: 0 0 6px; }
+  @media (max-width: 991px) {
+    .section-title h3 {
+      font-size: 32px; } }
+  @media (max-width: 767px) {
+    .section-title h3 {
+      font-size: 28px; } }
+  .section-title h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 30%;
+    margin: auto;
+    height: 2px;
+    z-index: -1;
+    background: #97e5ef; }
+
+.section-title p {
+  margin: 10px 0 0;
+  font-size: 18px; }
+  @media (max-width: 991px) {
+    .section-title p {
+      font-size: 17px; } }
+  @media (max-width: 767px) {
+    .section-title p {
+      font-size: 16px; } }
+  .section-title p.small {
+    margin: 8px 0 0;
+    font-size: 14px;
+    letter-spacing: 2px; }
+
+.section-title.text-center h3:after {
+  left: 30%; }
 
 .sub-title {
   position: relative; }
