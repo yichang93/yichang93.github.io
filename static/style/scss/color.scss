@@ -13,7 +13,11 @@
 }
 
 .dark-bg {
-	background-color: $px-dark;
+	background-color: rgba($px-dark, 0.6);
+}
+
+.light-bg {
+	background-color: rgba($px-white, 0.65);
 }
 
 

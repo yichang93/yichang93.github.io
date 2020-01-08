@@ -156,9 +156,17 @@
 }
 
 #autodesk_project_overview {
-	background-image: url('../img/autodesk_bg_sm');
+	background-image: url('../img/autodesk_bg_sm.png');
 	background-size: cover;
 	@media (min-width: 576px) {
-		background-image: url('../img/autodesk_bg.png');
+		background-image: url('../img/autodesk_bg.jpg');
+	}
+}
+
+#huemail_project_overview {
+	background-image: url('../img/huemail_bg_sm.png');
+	background-size: cover;
+	@media (min-width: 576px) {
+		background-image: url('../img/huemail_bg.png');
 	}
 }
