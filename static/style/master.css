@@ -683,7 +683,7 @@ h6 {
       margin-right: .25rem; }
 
 .main-navbar {
-  padding: 0; }
+  padding: 10px 15px; }
   .main-navbar .logo-text {
     font-size: 22px;
     font-weight: 400;
@@ -844,34 +844,32 @@ h6 {
 /* Responsive Menu
 -----------------------------*/
 @media (max-width: 991px) {
-  .main-navbar {
-    padding: 10px 15px; }
-    .main-navbar > .container {
-      padding-left: 0px;
-      padding-right: 0px; }
-    .main-navbar .navbar-collapse {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #ffffff;
-      max-height: 80vh;
-      overflow-y: auto; }
-    .main-navbar .navbar-nav > li {
-      margin: 0;
-      border-top: 1px solid #f3f3f3; }
-      .main-navbar .navbar-nav > li:last-of-type {
-        border-bottom: 1px solid #f3f3f3; }
-      .main-navbar .navbar-nav > li > a {
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 700;
-        padding: 0 15px;
-        line-height: 40px;
-        display: block;
-        color: #0b0b0a; }
-        .main-navbar .navbar-nav > li > a.active {
-          color: #97e5ef; } }
+  .main-navbar > .container {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .main-navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    max-height: 80vh;
+    overflow-y: auto; }
+  .main-navbar .navbar-nav > li {
+    margin: 0;
+    border-top: 1px solid #f3f3f3; }
+    .main-navbar .navbar-nav > li:last-of-type {
+      border-bottom: 1px solid #f3f3f3; }
+    .main-navbar .navbar-nav > li > a {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 0 15px;
+      line-height: 40px;
+      display: block;
+      color: #0b0b0a; }
+      .main-navbar .navbar-nav > li > a.active {
+        color: #97e5ef; } }
 
 /* Desktop
 --------------------*/

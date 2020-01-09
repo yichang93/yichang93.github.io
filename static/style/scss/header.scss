@@ -60,7 +60,7 @@
 }
 
 .main-navbar {
-	padding: 0;
+	padding: 10px 15px;
 	.logo-text {
 	    font-size: 22px;
 	    font-weight: 400;
@@ -262,7 +262,6 @@
 -----------------------------*/
 @include down-md {
 	.main-navbar {
-		padding: 10px 15px;
 		> .container {
 			padding-left: 0px;
 			padding-right: 0px;
