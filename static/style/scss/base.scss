@@ -15,7 +15,7 @@ html {
 }
 
 a {
-	color: $px-theme;
+	color: $px-theme-dark;
 	@include px-hover {
 		color: darken($px-theme, 8%);
 		text-decoration: none;

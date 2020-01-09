@@ -8,7 +8,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400; 
-	color: $px-theme;
+	color: $px-theme-dark;
 	border-bottom: 2px solid currentColor;
 	&:hover {
 		color: $px-dark;
@@ -64,8 +64,8 @@
 	}
 	&.m-btn-t-theme {
 		background: transparent;
-		color: $px-theme;
-		border-color: $px-theme;
+		color: $px-theme-dark;
+		border-color: $px-theme-dark;
 		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 		&:hover {
 			background: $px-theme;
