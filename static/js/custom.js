@@ -44,7 +44,7 @@
         * One Page
     ----------------------*/
     NAY.OnePage = function(){
-        $('.header-nav-left a[href*="#"]:not([href="#"]), .got-to a[href*="#"]:not([href="#"])').on('click', function() {
+        $('.js-scroll-trigger').on('click', function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
               var target = $(this.hash);
                   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -65,52 +65,6 @@
 	    $('.header-height').css("min-height", HHeight);	
 	}
 
-	/* ---------------------------------------------- /*
-		* accordion
-	/* ---------------------------------------------- */
-	NAY.Accordion = function() {
-		$('.accordion').each(function (i, elem) {
-	       	var $elem = $(this),
-	           $acpanel = $elem.find(".acco-group > .acco-des"),
-	           $acsnav =  $elem.find(".acco-group > .acco-heading");
-	          $acpanel.hide().first().slideDown("easeOutExpo");
-	          $acsnav.first().parent().addClass("acco-active");
-	          $acsnav.on('click', function () {
-	            if(!$(this).parent().hasClass("acco-active")){
-	              var $this = $(this).next(".acco-des");
-	              $acsnav.parent().removeClass("acco-active");
-	              $(this).parent().addClass("acco-active");
-	              $acpanel.not($this).slideUp("easeInExpo");
-	              $(this).next().slideDown("easeOutExpo");
-	            }else{
-	               $(this).parent().removeClass("acco-active");
-	               $(this).next().slideUp("easeInExpo");
-	            }
-	            return false;
-	        });
-	    });
-	}
-
-	/*--------------------
-    * Counter JS
-    ----------------------*/
-	 NAY.Counter = function () {
-	  var counter = jQuery(".counter");
-	  var $counter = $('.counter');
-	  if(counter.length > 0) {  
-	      loadScript(plugin_track + 'counter/jquery.countTo.js', function() {
-	        $counter.each(function () {
-	         var $elem = $(this);                 
-	           $elem.appear(function () {
-	             $elem.find('.count').countTo({
-	             	speed: 2000,
-    				refreshInterval: 10
-	             });
-	          });                  
-	        });
-	      });
-	    }
-	  }
 
 	NAY.FadeIn = function () {	
 			
@@ -130,99 +84,6 @@
 	}
 
 
-	/* ---------------------------------------------- /*
-     * lightbox gallery
-    /* ---------------------------------------------- */
-    NAY.Gallery = function() {
-    	if ($(".lightbox-gallery").exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()){
-    		loadScript(plugin_track + 'magnific/jquery.magnific-popup.min.js', function() {
-    			if($(".lightbox-gallery").exists()){
-    				$('.lightbox-gallery').magnificPopup({
-				        delegate: '.gallery-link',
-				        type: 'image',
-				        tLoading: 'Loading image #%curr%...',
-				        mainClass: 'mfp-fade',
-				        fixedContentPos: true,
-				        closeBtnInside: false,
-				        gallery: {
-				            enabled: true,
-				            navigateByImgClick: true,
-				            preload: [0, 1] // Will preload 0 - before current, and 1 after NAY current image
-				        }
-				    });	
-    			}
-    			if ($(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()) {
-		            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		                  disableOn: 700,
-		                  type: 'iframe',
-		                  mainClass: 'mfp-fade',
-		                  removalDelay: 160,
-		                  preloader: false,
-		                  fixedContentPos: false
-		            });
-		        }
-    		});
-    	}
-    }
-
-
-
-    /*--------------------
-        * pieChart
-    ----------------------*/
-    NAY.pieChart = function () {
-    	var $Pie_Chart = $('.pie_chart_in');
-        if ($Pie_Chart.exists()) {
-            loadScript(plugin_track + 'easy-pie-chart/jquery.easypiechart.min.js', function() {
-            $Pie_Chart.each(function () {
-                var $elem = $(this),
-                    pie_chart_size = $elem.attr('data-size') || "160",
-                    pie_chart_animate = $elem.attr('data-animate') || "2000",
-                    pie_chart_width = $elem.attr('data-width') || "6",
-                    pie_chart_color = $elem.attr('data-color') || "#84ba3f",
-                    pie_chart_track_color = $elem.attr('data-trackcolor') || "rgba(0,0,0,0.10)";
-                $elem.find('span, i').css({
-                    'width': pie_chart_size + 'px',
-                    'height': pie_chart_size + 'px',
-                    'line-height': pie_chart_size + 'px'
-                });
-                $elem.appear(function () {
-                    $elem.easyPieChart({
-                        size: Number(pie_chart_size),
-                        animate: Number(pie_chart_animate),
-                        trackColor: pie_chart_track_color,
-                        lineWidth: Number(pie_chart_width),
-                        barColor: pie_chart_color,
-                        scaleColor: false,
-                        lineCap: 'square',
-                        onStep: function (from, to, percent) {
-                            $elem.find('span.middle').text(Math.round(percent));
-                        }
-                    });
-               });
-            });
-
-         });
-      }
-    }
-
-
-    NAY.mTypeIt = function() {
-    	if ($("#type-it").exists()){
-            loadScript(plugin_track + 'typeit-master/typeit.min.js', function() {
-                new TypeIt('#type-it', {
-		            speed: 200,
-		            loop:true,
-		            strings: [
-		              'UX Designer'
-		            ],
-		            breakLines: false
-		        }); 
-            });
-        }
-	}
-
-	
 
 	/* ---------------------------------------------- /*
 	 * All Functions
@@ -253,15 +114,10 @@
 	});
 	// Document on Ready
 	$(document).on("ready", function(){
-		NAY.pieChart(),
 		NAY.HeaderFixd(),
 		NAY.OnePage(),
-		NAY.Accordion(),
-		NAY.Counter(),
 		NAY.MenuClose(),
-		NAY.Gallery(),
 		NAY.HeaderHeight(),
-		NAY.mTypeIt(),
 		NAY.FadeIn();
 	});
 
