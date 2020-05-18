@@ -106,7 +106,7 @@ h2,
 h3 {
 	font-family: $px-heading-font-family;
 	font-weight: $px-top-heading-weight;
-	letter-spacing: -2px;
+	letter-spacing: 0px;
 	text-transform: uppercase;
 }
 
@@ -147,13 +147,14 @@ h4 {
 .h5,
 h5 {
 	font-size: $px-h5-font;
-	font-weight: $px-h5-font-weight;
+	font-weight: $px-h5-h6-font-weight;
 	margin-top: 1rem;
 	margin-bottom: .5rem;
 }
 .h6,
 h6 {
 	font-size: $px-h6-font;
+	font-weight: $px-h5-h6-font-weight;
 	margin-top: 1rem;
 	text-transform: uppercase;
 }

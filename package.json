@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/yichang93/yichang93.github.io#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.14.1"
   }
 }

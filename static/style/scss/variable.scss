@@ -1,13 +1,15 @@
 // @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,300i,400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:300,300i,500&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:300,300i,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600&display=swap');
+
 // Color system
 $px-theme:                      #97e5ef; //#ea2340;
-$px-body-color:                 #0b0b0a;
+$px-body-color:                 #212121;
 
 $px-theme-dark:                 #1CA3B5;
 $px-black:						#000000 !default; 
 $px-white:						#ffffff !default;
-$px-dark:						#0b0b0a !default;
+$px-dark:						#212121 !default;
 $px-medium-dark:				#4A4B48 !default;
 $px-gray:						#eef1e8 !default;
 $px-light-gray:					#f3f3f3 !default;
@@ -23,13 +25,13 @@ $px-h5-font:                	1rem !default;
 $px-h6-font:                	.75rem !default;
 
 $px-top-heading-weight:         700;
-$px-h5-font-weight:             500;
+$px-h5-h6-font-weight:             600;
 $px-body-weight:                300;
 
-$px-font-family:				'IBM Plex Serif', sans-serif; // Main Font Family
-$px-font-alt:					'IBM Plex Serif', sans-serif; // Main Font Family
+$px-font-family:				 'Open Sans', sans-serif;// Main Font Family
+$px-font-alt:					 'Open Sans', sans-serif;// Main Font Family
 
-$px-heading-font-family:         'IBM Plex Sans', serif; // Heading Font Family
+$px-heading-font-family:         'Fjalla One', sans-serif; // Heading Font Family
 
 // Breakpoints
 $px-media-xsm:					567px !default;
