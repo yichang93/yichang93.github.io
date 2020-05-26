@@ -170,3 +170,11 @@
 		background-image: url('../img/huemail_bg.png');
 	}
 }
+
+#openpo_project_overview {
+	background-image: url('../img/openpo_bg_sm.png');
+	background-size: cover;
+	@media (min-width: 576px) {
+		background-image: url('../img/openpo_bg.png');
+	}
+}
