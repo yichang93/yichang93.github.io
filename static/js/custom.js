@@ -82,6 +82,38 @@
 		}); 
 	}
 
+	NAY.projectImage = function () {
+		$(".project-img").each(function() {
+			var t = $(this);
+			t.on("mousemove", function(o) {
+				var a = t.outerWidth()
+				  , n = t.outerHeight()
+				  , r = t.offset().left - $(window).scrollLeft()
+				  , i = t.offset().top - $(window).scrollTop()
+				  , s = (o.clientX - r) / a
+				  , l = (o.clientY - i) / n
+				  , c = 2 * (l - .5)
+				  , f = (5 - 10 * s).toFixed(2)
+				  , d = ((10 * l - 5).toFixed(2),
+				20 * c);
+				console.log(t, f ,d)
+				TweenLite.to(t, .3, {
+					scale: 1.07,
+					rotationY: f,
+					y: 1
+				})
+			}),
+			t.on("mouseleave", function(e) {
+				TweenLite.to(this, .4, {
+					scale: 1,
+					rotationX: 0,
+					rotationY: 0,
+					y: 0
+				})
+			})
+		})
+	}
+
 
 
 	/* ---------------------------------------------- /*
@@ -117,7 +149,8 @@
 		NAY.OnePage(),
 		NAY.MenuClose(),
 		NAY.HeaderHeight(),
-		NAY.FadeIn();
+		NAY.FadeIn(),
+		NAY.projectImage();
 	});
 
 	// Document on Scrool

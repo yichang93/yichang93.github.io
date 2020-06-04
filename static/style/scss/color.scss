@@ -20,31 +20,66 @@
 	background-color: rgba($px-white, 0.65);
 }
 
+.openpo-bg {
+	background-color: #FFD300;
+}
+
+.esplanade-bg {
+	background-color: #732066 !important;
+}
+
+.zalora-bg {
+	background-color: #262626 !important;
+}
+
+.huemail-bg {
+	background-color: #01BCD4 !important;
+}
+
+.autodesk-bg {
+	background-color: #87bc40 !important;
+}
 
 /* Text color
 -------------------------------*/
 .white-color {
-	color: $px-white;
+	color: $px-white !important;
 }
 .white-color-light {
-	color: rgba($px-white, 0.65);
+	color: rgba($px-white, 0.65) !important;
 }
 .dark-color {
-	color: $px-dark;
+	color: $px-dark !important;
 }
 
 .body-color {
-	color: $px-body-color;
+	color: $px-body-color !important;
 }
 
 .theme-color {
-	color: $px-theme;
+	color: $px-theme !important;
 }
 
 .openpo-color {
-	color: #FFD300;
+	color: #FFD300 !important;
+}
+
+.esplanade-color {
+	color: #732066 !important;
+}
+
+.zalora-color {
+	color: #262626 !important;
+}
+
+.huemail-color {
+	color: #01BCD4 !important;
+}
+
+.autodesk-color {
+	color: #87bc40 !important;
 }
 
 .medium-dark-color {
-	color: $px-medium-dark;
+	color: $px-medium-dark !important;
 }

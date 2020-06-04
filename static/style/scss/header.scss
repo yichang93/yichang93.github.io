@@ -54,8 +54,7 @@
 		align-items: center;
 		color: $px-dark;
 		img {
-			height: 1.25rem;
-			margin-right: .25rem;
+			height: 1.5rem;
 		}
 	}
 }
@@ -89,8 +88,8 @@
 					}
 				}
 				> a {
-			        font-size: 15px;
-				    font-weight: 400;
+			        font-size: 1rem;
+				    font-weight: 300;
 				    padding: 0 !important;
 				    line-height: 42px;
 				    display: block;
@@ -114,10 +113,11 @@
 				    }
 				    &:hover,
 				    &.active {
+						font-weight: 600;
 				    	&:after {
 				    		width:100%;
 				    		right: auto;
-				    		left: 0;
+							left: 0;
 				    	}
 				    }
 				}

@@ -1,25 +1,32 @@
-// @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,300i,400,700&display=swap');
 // @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:300,300i,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&family=Permanent+Marker&display=swap');
 
 // Color system
-$px-theme:                      #97e5ef; //#ea2340;
+$px-theme:                      #212121; //#ea2340;
 $px-body-color:                 #212121;
 
-$px-theme-dark:                 #1CA3B5;
+$px-theme-dark:                 #212121;
 $px-black:						#000000 !default; 
 $px-white:						#ffffff !default;
 $px-dark:						#212121 !default;
 $px-medium-dark:				#4A4B48 !default;
-$px-gray:						#eef1e8 !default;
+$px-gray:						#f0f1f2 !default;
 $px-light-gray:					#f3f3f3 !default;
+$px-zalora:                     #262626;
+$px-esplanade:                  #732066;
+$px-openpo:                     #FFD300;
+$px-huemail:                    #01BCD4;
+$px-autodesk:                   #87bc40;
+
 
 
 // Font
 $px-base-font:					1rem !default;
 $px-h1-font:                	4.5rem !default;
 $px-h2-font:                	3.5rem !default;
-$px-h3-font:                	2.5rem !default;
+$px-h3-font:                	2rem !default;
 $px-h4-font:                	1.6rem !default;
 $px-h5-font:                	1rem !default;
 $px-h6-font:                	.75rem !default;
@@ -28,10 +35,11 @@ $px-top-heading-weight:         700;
 $px-h5-h6-font-weight:          600;
 $px-body-weight:                300;
 
-$px-font-family:				 'Open Sans', sans-serif;// Main Font Family
-$px-font-alt:					 'Open Sans', sans-serif;// Main Font Family
+$px-font-family:				 'IBM Plex Sans', sans-serif;// Main Font Family
+$px-font-alt:					 'IBM Plex Sans', sans-serif;// Main Font Family
 
-$px-heading-font-family:         'Fjalla One', sans-serif; // Heading Font Family
+$px-heading-font-family:         'IBM Plex Sans', sans-serif; // Heading Font Family
+$px-display-font-family:         'Permanent Marker', cursive;
 
 // Breakpoints
 $px-media-xsm:					567px !default;

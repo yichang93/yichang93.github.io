@@ -1,16 +1,3 @@
-/* Wrapper
----------------------------------*/
-.wrapper-right {
-	@include up-lg {
-		padding-left: 200px;
-		background: $px-white;
-	}
-	.footer {
-		position: relative;
-		z-index: 1;	
-	}
-}
-
 /* Home Banner
 ---------------------------------*/
 
@@ -118,9 +105,47 @@
 	}
 }
 
-.quotes {
-	padding-left: 35px;
-	border-left: 5px solid $px-dark;
+.project-img {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 35px 0;
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.project-img-depth {
+	display: block;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.project-img-depth img:first-child {
+    border-radius: 16px;
+}
+
+.project-img-depth img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(.775) translateZ(150px);
+    -moz-transform: scale(.775) translateZ(150px);
+    transform: scale(.775) translateZ(150px)
+}
+
+.badge {
+	height: 24px;
+	padding: 0 8px;
+	font-weight: 300;
+	line-height: 24px;
+	vertical-align: middle;
+	border-radius: 20px;
+	color: $px-dark;
 }
 
 .icon {
@@ -132,6 +157,20 @@
     fill: currentColor;
 }
 
+.read-more-link {
+	.icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	&:hover {
+		border-bottom: 2px solid;
+	}
+}
+
+.tagline-svg {
+	width: 61.8%;
+}
+
 .bullet-icon {
 	margin: 3rem 0 1rem;
 }
@@ -140,10 +179,10 @@
 /* ----- Esplanade --- */
 
 #esplanade_project_overview {
-	background-image: url('../img/esplanade_bg_sm.png');
+	background-image: url('../img/esplanade/esplanade_bg_sm.png');
 	background-size: cover;
 	@media (min-width: 576px) {
-		background-image: url('../img/esplanade_bg.png');
+		background-image: url('../img/esplanade/esplanade_bg.png');
 	}
 }
 
@@ -164,17 +203,17 @@
 }
 
 #huemail_project_overview {
-	background-image: url('../img/huemail_bg_sm.png');
+	background-image: url('../img/huemail/huemail_bg_sm.png');
 	background-size: cover;
 	@media (min-width: 576px) {
-		background-image: url('../img/huemail_bg.png');
+		background-image: url('../img/huemail/huemail_bg.png');
 	}
 }
 
 #openpo_project_overview {
-	background-image: url('../img/openpo_bg_sm.png');
+	background-image: url('../img/openpo/openpo_bg_sm.png');
 	background-size: cover;
 	@media (min-width: 576px) {
-		background-image: url('../img/openpo_bg.png');
+		background-image: url('../img/openpo/openpo_bg.png');
 	}
 }
