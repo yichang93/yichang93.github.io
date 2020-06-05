@@ -4317,7 +4317,10 @@ h6 {
   border-bottom: 2px solid; }
 
 .tagline-svg {
-  width: 61.8%; }
+  width: 90%; }
+  @media (min-width: 576px) {
+    .tagline-svg {
+      width: 61.8%; } }
 
 .bullet-icon {
   margin: 3rem 0 1rem; }

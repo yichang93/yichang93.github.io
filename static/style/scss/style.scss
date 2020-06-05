@@ -168,7 +168,10 @@
 }
 
 .tagline-svg {
-	width: 61.8%;
+	@media (min-width: 576px) {
+		width: 61.8%;
+	}
+	width: 90%;
 }
 
 .bullet-icon {
