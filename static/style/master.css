@@ -412,10 +412,10 @@ html {
   overflow-x: hidden; }
 
 a {
-  color: #212121; }
+  color: #212121;
+  text-decoration: underline; }
   a:hover {
     color: #0d0d0d;
-    text-decoration: none;
     cursor: pointer; }
 
 img {
@@ -704,29 +704,6 @@ h6 {
   @media (min-width: 992px) {
     .main-navbar .navbar-nav > li {
       margin: 0 0 0 30px; }
-      .main-navbar .navbar-nav > li.mm-in > a {
-        position: relative;
-        padding-right: 15px; }
-        .main-navbar .navbar-nav > li.mm-in > a:after {
-          content: "";
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          border-bottom: 1px solid currentColor;
-          border-right: 1px solid currentColor;
-          -moz-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-          right: 0;
-          top: -5px;
-          bottom: 0;
-          margin: auto; } }
-      @media (min-width: 992px) and (max-width: 991px) {
-        .main-navbar .navbar-nav > li.mm-in > a:after {
-          display: none; } }
-  @media (min-width: 992px) {
       .main-navbar .navbar-nav > li > a {
         font-size: 1rem;
         font-weight: 300;
@@ -734,7 +711,8 @@ h6 {
         line-height: 42px;
         display: block;
         color: #212121;
-        position: relative; }
+        position: relative;
+        text-decoration: none; }
         .fixed-header .main-navbar .navbar-nav > li > a {
           color: #212121; }
         .main-navbar .navbar-nav > li > a:hover {
@@ -752,7 +730,8 @@ h6 {
           height: 2px;
           background: currentColor; }
         .main-navbar .navbar-nav > li > a:hover, .main-navbar .navbar-nav > li > a.active {
-          font-weight: 600; }
+          font-weight: 600;
+          text-decoration: none; }
           .main-navbar .navbar-nav > li > a:hover:after, .main-navbar .navbar-nav > li > a.active:after {
             width: 100%;
             right: auto;
@@ -4311,12 +4290,14 @@ h6 {
   stroke: currentColor;
   fill: currentColor; }
 
-.read-more-link .icon {
-  width: 1.5rem;
-  height: 1.5rem; }
-
-.read-more-link:hover {
-  border-bottom: 2px solid; }
+.read-more-link {
+  text-decoration: none; }
+  .read-more-link .icon {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .read-more-link:hover {
+    border-bottom: 2px solid;
+    text-decoration: none; }
 
 .tagline-svg {
   width: 90%; }

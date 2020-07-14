@@ -65,28 +65,6 @@
 		.navbar-nav {
 			> li {
 				margin:0 0 0 30px;
-				&.mm-in {
-					> a {
-						position: relative;
-						padding-right: 15px;
-						&:after {
-							content:"";
-							position: absolute;
-							width: 6px;
-							height: 6px;
-							border-bottom: 1px solid currentColor;
-							border-right: 1px solid currentColor;
-							@include rotate(45);
-							right: 0;
-							top: -5px;
-							bottom: 0;
-							margin: auto;
-							@include down-md {
-								display: none;
-							}
-						}
-					}
-				}
 				> a {
 			        font-size: 1rem;
 				    font-weight: 300;
@@ -94,7 +72,8 @@
 				    line-height: 42px;
 				    display: block;
 				    color: $px-dark;
-				    position: relative;
+					position: relative;
+					text-decoration: none;
 				    .fixed-header & {
 				    	color: $px-dark;
 					}
@@ -114,6 +93,7 @@
 				    &:hover,
 				    &.active {
 						font-weight: 600;
+						text-decoration: none;
 				    	&:after {
 				    		width:100%;
 				    		right: auto;

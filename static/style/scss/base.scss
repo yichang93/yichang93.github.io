@@ -16,9 +16,10 @@ html {
 
 a {
 	color: $px-theme-dark;
+	text-decoration: underline;
 	@include px-hover {
 		color: darken($px-theme, 8%);
-		text-decoration: none;
+		// text-decoration: none;
 	}
 }
 img {
