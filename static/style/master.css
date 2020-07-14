@@ -552,6 +552,9 @@ h6 {
   color: #4A4B48;
   font-size: 0.75rem; }
 
+.strong, strong {
+  font-weight: 600; }
+
 /* ----------------------
 *	owl 
 ---------------------------*/
