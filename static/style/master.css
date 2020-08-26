@@ -152,6 +152,9 @@ Table of contents
 /*----------------------------------
 * Buttons
 ----------------------------------*/
+a[role=button] {
+  text-decoration: none; }
+
 .m-btn-link {
   display: inline-block;
   text-decoration: none;
@@ -329,57 +332,6 @@ Table of contents
 
 .social-icon.si-radisu a {
   border-radius: 3px; }
-
-.video-btn {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-  -moz-transition: ease all 0.55s;
-  -o-transition: ease all 0.55s;
-  -webkit-transition: ease all 0.55s;
-  transition: ease all 0.55s;
-  z-index: 1;
-  border: none; }
-  .video-btn:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
-    pointer-events: none;
-    z-index: -1; }
-  .video-btn.white {
-    background: #ffffff; }
-    .video-btn.white:after {
-      background: #ffffff; }
-    .video-btn.white span {
-      color: #212121; }
-  .video-btn.theme {
-    background: #212121; }
-    .video-btn.theme:after {
-      background: #212121; }
-    .video-btn.theme span {
-      color: #ffffff; }
-  .video-btn span {
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 20px solid currentcolor;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 9px;
-    right: 0;
-    margin: auto;
-    width: 0px;
-    height: 0px; }
 
 @keyframes pulse-border {
   0% {
