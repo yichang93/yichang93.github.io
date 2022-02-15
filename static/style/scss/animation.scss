@@ -1,7 +1,7 @@
 .shake-vertical {
     display: block;
-	-webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s both;
-	        animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s both;
+	-webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s both;
+	        animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s both;
 }
 
 @keyframes shake-vertical {
@@ -130,7 +130,7 @@ left: 35%;
 width: 150px;
 height: 150px;
 animation-delay: 7s;
-background: $px-esplanade;
+background: $px-workspace;
 }
     
 .circles li:nth-child(8){
@@ -148,7 +148,7 @@ width: 15px;
 height: 15px;
 animation-delay: 2s;
 animation-duration: 35s;
-background: $px-huemail;
+background: $px-workspace;
 }
     
 .circles li:nth-child(10){

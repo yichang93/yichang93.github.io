@@ -1,7 +1,8 @@
 // @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:300,300i,500&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&family=Permanent+Marker&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,600;1,600&display=swap');
 
 // Color system
 $px-theme:                      #212121; //#ea2340;
@@ -14,11 +15,20 @@ $px-dark:						#212121 !default;
 $px-medium-dark:				#4A4B48 !default;
 $px-gray:						#f0f1f2 !default;
 $px-light-gray:					#f3f3f3 !default;
+$px-dark-bg:                    #1F252A;
 $px-zalora:                     #262626;
 $px-esplanade:                  #732066;
 $px-openpo:                     #FFD300;
-$px-huemail:                    #01BCD4;
+$px-huemail:                    #01a3d4;
 $px-autodesk:                   #87bc40;
+$px-workspace:                  #4DDBDD;
+
+// $px-zalora:                     #6667ab;
+// $px-esplanade:                  #6667ab;
+// $px-openpo:                     #6667ab;
+// $px-huemail:                    #6667ab;
+// $px-autodesk:                   #6667ab;
+
 
 
 
@@ -31,15 +41,21 @@ $px-h4-font:                	1.6rem !default;
 $px-h5-font:                	1rem !default;
 $px-h6-font:                	.75rem !default;
 
-$px-top-heading-weight:         700;
-$px-h5-h6-font-weight:          600;
-$px-body-weight:                300;
+$px-top-heading-weight:         300;
+$px-h5-h6-font-weight:          700;
+$px-body-weight:                400;
 
-$px-font-family:				 'IBM Plex Sans', sans-serif;// Main Font Family
-$px-font-alt:					 'IBM Plex Sans', sans-serif;// Main Font Family
+// $px-font-family:				 'IBM Plex Sans', sans-serif;// Main Font Family
+// $px-font-alt:					 'IBM Plex Sans', sans-serif;// Main Font Family
 
-$px-heading-font-family:         'IBM Plex Sans', sans-serif; // Heading Font Family
-$px-display-font-family:         'Permanent Marker', cursive;
+// $px-heading-font-family:         'IBM Plex Sans', sans-serif; // Heading Font Family
+// $px-display-font-family:         'Permanent Marker', cursive;
+
+$px-font-family:				 'Montserrat', sans-serif;// Main Font Family
+$px-font-alt:					 'Montserrat', sans-serif;// Main Font Family
+
+$px-heading-font-family:         'Montserrat', sans-serif; // Heading Font Family
+$px-display-font-family:         'Open Sans', sans-serif;
 
 // Breakpoints
 $px-media-xsm:					567px !default;

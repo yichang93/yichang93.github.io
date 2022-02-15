@@ -1,11 +1,11 @@
 /*----------------------------------
 Table of contents
 ----------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,600;1,600&display=swap");
 .shake-vertical {
   display: block;
-  -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both;
-  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both; }
+  -webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both;
+  animation: shake-vertical 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 4s both; }
 
 @keyframes shake-vertical {
   0%,
@@ -92,7 +92,7 @@ Table of contents
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
-  background: #01BCD4; }
+  background: #01a3d4; }
 
 .circles li:nth-child(5) {
   left: 65%;
@@ -113,7 +113,7 @@ Table of contents
   width: 150px;
   height: 150px;
   animation-delay: 7s;
-  background: #732066; }
+  background: #4DDBDD; }
 
 .circles li:nth-child(8) {
   left: 50%;
@@ -129,7 +129,7 @@ Table of contents
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background: #01BCD4; }
+  background: #4DDBDD; }
 
 .circles li:nth-child(10) {
   left: 85%;
@@ -353,10 +353,10 @@ a[role=button] {
 *	General
 ------------------------*/
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #212121;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   font-smoothing: antialiased; }
 
@@ -438,14 +438,27 @@ mark {
 *Heading fonts size
 ---------------------------*/
 .h1,
-h1,
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px; }
+
 .h2,
 h2,
 .h3,
 h3 {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600; }
+
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  letter-spacing: -1px; }
+  letter-spacing: 1px; }
 
 .h1,
 h1 {
@@ -485,19 +498,19 @@ h4 {
 .h5,
 h5 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: .5rem; }
 
 .h6,
 h6 {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
   text-transform: uppercase; }
 
 .display-text {
-  font-family: "Permanent Marker", cursive; }
+  font-family: "Open Sans", sans-serif; }
 
 .small, small {
   text-transform: uppercase;
@@ -505,7 +518,7 @@ h6 {
   font-size: 0.75rem; }
 
 .strong, strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 /* ----------------------
 *	owl 
@@ -549,13 +562,13 @@ h6 {
   background-color: #ffffff; }
 
 .dark-bg {
-  background-color: rgba(33, 33, 33, 0.6); }
+  background-color: rgba(31, 37, 42, 0.7); }
 
 .light-bg {
   background-color: rgba(255, 255, 255, 0.65); }
 
 .openpo-bg {
-  background-color: #FFD300; }
+  background-color: #FFD300 !important; }
 
 .esplanade-bg {
   background-color: #732066 !important; }
@@ -564,10 +577,13 @@ h6 {
   background-color: #262626 !important; }
 
 .huemail-bg {
-  background-color: #01BCD4 !important; }
+  background-color: #01a3d4 !important; }
 
 .autodesk-bg {
   background-color: #87bc40 !important; }
+
+.workspace-bg {
+  background-color: #4DDBDD !important; }
 
 /* Text color
 -------------------------------*/
@@ -596,10 +612,13 @@ h6 {
   color: #262626 !important; }
 
 .huemail-color {
-  color: #01BCD4 !important; }
+  color: #01a3d4 !important; }
 
 .autodesk-color {
   color: #87bc40 !important; }
+
+.workspace-color {
+  color: #4DDBDD !important; }
 
 .medium-dark-color {
   color: #4A4B48 !important; }
@@ -643,7 +662,7 @@ h6 {
   color: #212121;
   font-size: 1.25rem;
   font-weight: 400;
-  font-family: "IBM Plex Sans", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   .header-nav.fixed-header {
     background: #ffffff;
     box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1); }
@@ -1050,7 +1069,7 @@ h6 {
   opacity: 1; }
 
 .font-alt {
-  font-family: "IBM Plex Sans", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /*	Property
 ---------------------------*/
@@ -4312,3 +4331,10 @@ h6 {
   @media (min-width: 576px) {
     #openpo_project_overview {
       background-image: url("../img/openpo/openpo_bg.png"); } }
+
+#workspace_project_overview {
+  background-image: url("../img/workspace/workspace_bg_sm.png");
+  background-size: cover; }
+  @media (min-width: 576px) {
+    #workspace_project_overview {
+      background-image: url("../img/workspace/workspace_bg.png"); } }

@@ -100,14 +100,30 @@ mark {
 *Heading fonts size
 ---------------------------*/
 .h1,
-h1, 
+h1{
+	font-family: $px-display-font-family;
+	font-weight: $px-top-heading-weight;
+	letter-spacing: -1px;
+	// text-transform: uppercase;
+}
+
 .h2,
 h2,
 .h3,
 h3 {
+	font-family: $px-display-font-family;
+	font-weight: 600;
+}
+
+.h4,
+h4, 
+.h5,
+h5,
+.h6,
+h6 {
 	font-family: $px-heading-font-family;
-	font-weight: $px-top-heading-weight;
-	letter-spacing: -1px;
+	font-weight: $px-h5-h6-font-weight;
+	letter-spacing: 1px;
 	// text-transform: uppercase;
 }
 

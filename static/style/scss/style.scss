@@ -225,3 +225,11 @@
 		background-image: url('../img/openpo/openpo_bg.png');
 	}
 }
+
+#workspace_project_overview {
+	background-image: url('../img/workspace/workspace_bg_sm.png');
+	background-size: cover;
+	@media (min-width:576px) {
+		background-image: url('../img/workspace/workspace_bg.png');
+	}
+}

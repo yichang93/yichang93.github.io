@@ -13,7 +13,7 @@
 }
 
 .dark-bg {
-	background-color: rgba($px-dark, 0.6);
+	background-color: rgba($px-dark-bg, 0.7);
 }
 
 .light-bg {
@@ -21,24 +21,29 @@
 }
 
 .openpo-bg {
-	background-color: #FFD300;
+	background-color: $px-openpo !important;
 }
 
 .esplanade-bg {
-	background-color: #732066 !important;
+	background-color: $px-esplanade !important;
 }
 
 .zalora-bg {
-	background-color: #262626 !important;
+	background-color: $px-zalora !important;
 }
 
 .huemail-bg {
-	background-color: #01BCD4 !important;
+	background-color: $px-huemail !important;
 }
 
 .autodesk-bg {
-	background-color: #87bc40 !important;
+	background-color: $px-autodesk !important;
 }
+
+.workspace-bg {
+	background-color: $px-workspace !important;
+}
+
 
 /* Text color
 -------------------------------*/
@@ -61,23 +66,27 @@
 }
 
 .openpo-color {
-	color: #FFD300 !important;
+	color: $px-openpo !important;
 }
 
 .esplanade-color {
-	color: #732066 !important;
+	color: $px-esplanade !important;
 }
 
 .zalora-color {
-	color: #262626 !important;
+	color: $px-zalora !important;
 }
 
 .huemail-color {
-	color: #01BCD4 !important;
+	color: $px-huemail !important;
 }
 
 .autodesk-color {
-	color: #87bc40 !important;
+	color: $px-autodesk !important;
+}
+
+.workspace-color {
+	color: $px-workspace !important;
 }
 
 .medium-dark-color {
