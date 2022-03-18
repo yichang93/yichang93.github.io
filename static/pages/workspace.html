@@ -72,7 +72,7 @@
             <div class="container dark-bg white-color p-2rem m-6rem-t m-3rem-b">
                 <div>
                     <h1>Workspace</h1><br>
-                    <small>UI/UX Design</small>
+                    <small class="text-white">UI/UX Design</small>
                     <div class="row m-1rem-b m-3rem-t">
                         <div class="col-lg-6">
                             <h6>Period</h6>
@@ -85,18 +85,32 @@
                         <div class="col-lg-6">
                             <h6>Overview</h6>
                             <div>
-                                Screening Eagle, formerly called Proceq, was specialized in NDT portable sensor
-                                business. Recently, the company has slowly transitioned its business into the SaaS
-                                model. And there are tons of user-generated data stored on its cloud. The company
-                                identified an opportunity to build a cloud-based web platform that makes these data more
-                                accessible to the users and links all the products together to create a powerful
-                                ecosystem.
-                                <a class="workspace-color"
-                                    href="https://www.screeningeagle.com/en/products/category/software/workspace"> More
-                                    information about the Workspace</a>
-                            </div>
+                                As the UX UI designer on this project, I worked cross-functionally with a lot of moving
+                                parts, including the product management team and remote engineers. Workspace is an
+                                ongoing project. This case study covers my design process from getting the requirement
+                                til shipping the first release. </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="workspace_about" class="hideme">
+            <div class="container">
+                <div class="row m-3rem-t">
+                    <dia class="col">
+                        <div class="font-italic medium-dark-color text-center">
+                            Screening Eagle is a construction tech company who is specialized in NDT portable sensor
+                            business. It's the pioneer in the industry who starts transiting its business into the
+                            SaaS model. With tons of user-generated data stored on its cloud. The company
+                            identified an opportunity to build a cloud-based web platform, <a class="workspace-color"
+                                href="https://www.screeningeagle.com/en/products/category/software/workspace">
+                                Workspace</a>, which makes
+                            these data more accessible to the users and links all the products together to create a
+                            powerful ecosystem.
+                        </div>
+                        <img class="m-5rem-t" src="../img/workspace/Workspace_about.png" />
+                    </dia>
+
                 </div>
             </div>
         </section>
@@ -113,16 +127,28 @@
                             step I took was to conduct a few rounds of stakeholder interviews to understand the
                             short-term and long-term goals and the business considerations behind the decisions.
                         </p>
+                        <p class="font-italic">"Workspace is going to be the backbone of our company. Users can manage
+                            all kinds of assets on it, including their measurement data, device information, and
+                            employee accounts. The first step should be making what we already have accessible to our
+                            users."</p>
+                        <p style="text-align:right;">-- CPO</p>
 
-                        <h5>Internal user & product experts</h5>
+                        <h5>Reginal Sales, Product Managers & Tech Lead</h5>
                         <p>
-                            The stakeholder interviews helped me understand that the Workspace is going to be a platform
-                            that allows the individual product teams to provide services to their users. And as the
-                            first step, we should make users' data available and accessible on Workspace. So it's
-                            crucial to understand the different needs of different products and their users.
-                            Interviewing the internal employees, e.g., the regional sales and the sensors' product
-                            managers, helped me understand the customer segments and the products.
+                            After getting the project's vision and the scope of the first release, I talked to internal
+                            users, i.e., regional sales, sensors' product managers, and tech lead to understand the
+                            potential users, needs of the users, and technical constraints.
                         </p>
+                        <p>What's more important is to spread the idea of this new project so that they would inform me
+                            when there's an idea/news that might be related.</p>
+
+                        <h5>Let's focus on inspection data management!</h5>
+                        <p>From the internal team discussion, I learned that many of our users are either individual
+                            inspectors or small inspection companies. Managing device or employee accounts wouldn't be
+                            crucial to them. However, with more and more inspection measurements, there was an
+                            increasing need to organize the measurement data. Additionally, we didn't have the
+                            infrastructure for managing device and employee accounts information. Hence, we decided to
+                            focus on inspection data management in the first release. </p>
                     </div>
                 </div>
             </div>
@@ -134,6 +160,8 @@
                         <h3 class="display-text">Research & Findings</h3>
                     </div>
                     <div class="col-lg-8 m-3rem-t">
+
+
                         <h5>User interviews</h5>
                         <p>
                             After gathering the initial requirements, I noticed a few knowledge gaps in my team. We
@@ -146,7 +174,7 @@
                             <li>How do our users feel about the data viewers in our existing products?</li>
                         </ul>
                         <h5>On-site Workers & Engineers</h5>
-                        <p>From the discussion with the internal employees, we learned there are, in general, 2 types of
+                        <p>From the discussion with the internal team, we learned there are, in general, 2 types of
                             users: on-site workers and civil engineers.
                         </p>
                         <div class="row">
@@ -165,12 +193,11 @@
                         <div class="row">
                             <h5>Findings</h5>
                             <ul>
-                                <li>The users want to see measurement data and probe information.</li>
-                                <li>The context of the measurements is crucial, e.g. image of the testing element,
-                                    weather of the day, settings, etc.</li>
-                                <li>Remote collaborations can improve the working efficiency.</li>
-                                <li>Auto-grouping of data in various ways (by time, by location) would be a way to help
-                                    users to organize their measurements and improve productivity.</li>
+                                <li>People want to know the context of the measurement data, e.g., the image of the
+                                    testing element, the weather of the day, settings, etc.</li>
+                                <li>People want to have a way to group data by time or location automatically so that
+                                    they can easily find the measurement when they are back at the office.</li>
+                                <li>People collaborate by sharing the measurement data.</li>
                             </ul>
                         </div>
                     </div>
@@ -209,26 +236,27 @@
                     <div class="col-lg-4">
                         <h3 class="display-text">Design</h3>
                         <p>
-                            With the feedback we got from the team, I iterated the design, and get it to a stage where
-                            we are ready to show it to the users.
+                            With the feedback from the team and insights from user interviews, I got an alignment with
+                            the team for overall design direction.
                         </p>
 
                     </div>
                     <div class="col-lg-8 m-3rem-t">
-                        <img src="../img/workspace/homepage.png" />
-                        <img class="m-3rem-t" src="../img/workspace/measurement.png" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-lg-4 col-lg-8">
-                        <h5>Design System</h5>
-                        <p>
-                            As we were aiming to build a platform and allow different products to provide services for
-                            their users. Having a design system that guides designers of different products to come up
-                            with designs that give a consistent look and feel as the Workspace is crucial. Hence a big
-                            part of the project was focusing on the Design System.
-                        </p>
-                        <img src="../img/workspace/design_system.png" />
+                        <h5>Measurement Details</h5>
+                        <p>Knowing that the users want to see the context of the measurement data, I worked closely with
+                            the product managers of different sensor teams to define the information to be shown in the
+                            measurement details.</p>
+                        <img src="../img/workspace/measurement_detail.png" />
+
+                        <h5>Event Tracker Widget</h5>
+                        <p>The event tracker is a widget that the user can interact with. It allows users to filter the
+                            measurements by time or location. Also, it adds a bit of joy to the whole product :) </p>
+                        <img src="../img/workspace/auto_group.png" />
+
+                        <h5>Export & Sharing</h5>
+                        <p>Export and sharing are the two essential parts in users' workflow. </p>
+                        <img src="../img/workspace/collaboration.png" />
+
                     </div>
                 </div>
             </div>
@@ -271,8 +299,57 @@
 
                         <p class="m-3rem-t">I summarized my observation by a rainbow chart.</p>
                         <img src="../img/workspace/rainbow.png" />
-                        <p>No major issues were found from the usability testing. But a few touch ups were made.</p>
-                        <img src="../img/workspace/design_changes.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="workspace_design_revision" class="hideme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="display-text">Design Revisions</h3>
+                        <p>Taking what I learned from the usability testing and feedback from design review meetings, I
+                            began to make revisions to my design. Here are two examples in this section.</p>
+                    </div>
+                    <div class="col-lg-8 m-4rem-t">
+                        <h5>1. Remove the App tiles and use side navbar for navigating between apps.</h5>
+                        <p>In the usability testing, we noticed all the testers tried to find the measurement file from
+                            Recent Files instead of clicking the app tiles when we asked them to open a measurement
+                            file. Also, when we asked about the App tiles, they weren't sure where it would lead them
+                            to. Thus, in the new design, I reused the side navbar from the data viewer screen so that
+                            users can learn how the product UI works faster. Also, the new position gives the app
+                            navigation more prominence.</p>
+
+                        <img src="../img/workspace/home_redesign.png" />
+
+                        <h5>2. Group all actions together and put them at top left.</h5>
+                        <p>We also noticed the users overlooked the action buttons on the top right corner in the
+                            usability testing. My hypothesis was: the refresh button in teal grabbed the most attention
+                            from users - most people scan a webpage from the top left, plus the color is very
+                            eye-catching. Hence I decided to put the buttons together so that when users see the refresh
+                            button, they would also see the buttons in grey. </p>
+
+                        <img src="../img/workspace/table_redesign.png" />
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="workspace_ds" class="hideme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="display-text">Design System</h3>
+
+                    </div>
+                    <div class="offset-lg-4 col-lg-8">
+                        <p>
+                            As we were aiming to build a platform and allow different products to provide services for
+                            their users. Having a design system that guides designers of different products to come up
+                            with designs that give a consistent look and feel as the Workspace is crucial. Hence a big
+                            part of the project was focusing on the Design System.
+                        </p>
+                        <img src="../img/workspace/design_system.png" />
                     </div>
                 </div>
             </div>
