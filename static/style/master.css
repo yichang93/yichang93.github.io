@@ -113,7 +113,7 @@ Table of contents
   width: 150px;
   height: 150px;
   animation-delay: 7s;
-  background: #4DDBDD; }
+  background: #93F6E3; }
 
 .circles li:nth-child(8) {
   left: 50%;
@@ -129,7 +129,7 @@ Table of contents
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background: #4DDBDD; }
+  background: #93F6E3; }
 
 .circles li:nth-child(10) {
   left: 85%;
@@ -583,7 +583,7 @@ h6 {
   background-color: #87bc40 !important; }
 
 .workspace-bg {
-  background-color: #4DDBDD !important; }
+  background-color: #93F6E3 !important; }
 
 /* Text color
 -------------------------------*/
@@ -618,7 +618,7 @@ h6 {
   color: #87bc40 !important; }
 
 .workspace-color {
-  color: #4DDBDD !important; }
+  color: #93F6E3 !important; }
 
 .medium-dark-color {
   color: #4A4B48 !important; }
@@ -4338,3 +4338,56 @@ h6 {
   @media (min-width: 576px) {
     #workspace_project_overview {
       background-image: url("../img/workspace/workspace_bg.png"); } }
+
+.timeline-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.timeline-steps .timeline-step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem; }
+
+@media (min-width: 768px) {
+  .timeline-steps .timeline-step:not(:last-child):after {
+    content: "";
+    display: block;
+    border-top: 0.25rem dotted #93F6E3;
+    width: 3.46rem;
+    position: absolute;
+    left: 7.5rem;
+    top: .3125rem; }
+  .timeline-steps .timeline-step:not(:first-child):before {
+    content: "";
+    display: block;
+    border-top: 0.25rem dotted #93F6E3;
+    width: 3.8125rem;
+    position: absolute;
+    right: 7.5rem;
+    top: .3125rem; } }
+
+.timeline-steps .timeline-content {
+  width: 10rem;
+  text-align: center; }
+
+.timeline-steps .timeline-content .inner-circle {
+  border-radius: 1.5rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #93F6E3; }
+
+.timeline-steps .timeline-content .inner-circle:before {
+  content: "";
+  background-color: #CC8FF7;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 6.25rem;
+  opacity: .2; }
