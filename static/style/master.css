@@ -4289,7 +4289,9 @@ h6 {
   overflow: hidden;
   max-width: 100%; }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -4310,6 +4312,13 @@ h6 {
   @media (min-width: 576px) {
     #zalora_project_overview {
       background-image: url("../img/zalora/zalora_bg.png"); } }
+
+#zalora_app_project_overview {
+  background-image: url("../img/zalora-app/zalora_app_bg_sm.png");
+  background-size: cover; }
+  @media (min-width: 576px) {
+    #zalora_app_project_overview {
+      background-image: url("../img/zalora-app/zalora_app_bg.png"); } }
 
 #autodesk_project_overview {
   background-image: url("../img/autodesk/autodesk_bg_sm.png");
