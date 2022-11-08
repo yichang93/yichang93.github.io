@@ -14,10 +14,15 @@
 
 .dark-bg {
 	background-color: rgba($px-dark-bg, 0.7);
+	backdrop-filter: blur(10px);
+	border-radius: 12px;
 }
 
 .light-bg {
 	background-color: rgba($px-white, 0.65);
+	backdrop-filter: blur(10px);
+	border-radius: 12px;
+	border: 2px solid rgba($px-white, 0.3);
 }
 
 .openpo-bg {
@@ -50,9 +55,11 @@
 .white-color {
 	color: $px-white !important;
 }
+
 .white-color-light {
 	color: rgba($px-white, 0.65) !important;
 }
+
 .dark-color {
 	color: $px-dark !important;
 }
