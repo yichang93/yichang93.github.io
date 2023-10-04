@@ -113,7 +113,7 @@ Table of contents
   width: 150px;
   height: 150px;
   animation-delay: 7s;
-  background: #93F6E3; }
+  background: #004260; }
 
 .circles li:nth-child(8) {
   left: 50%;
@@ -129,7 +129,7 @@ Table of contents
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background: #93F6E3; }
+  background: #004260; }
 
 .circles li:nth-child(10) {
   left: 85%;
@@ -588,7 +588,7 @@ h6 {
   background-color: #87bc40 !important; }
 
 .workspace-bg {
-  background-color: #93F6E3 !important; }
+  background-color: rgba(0, 66, 96, 0.3) !important; }
 
 /* Text color
 -------------------------------*/
@@ -623,7 +623,7 @@ h6 {
   color: #87bc40 !important; }
 
 .workspace-color {
-  color: #93F6E3 !important; }
+  color: #004260 !important; }
 
 .medium-dark-color {
   color: #4A4B48 !important; }
@@ -4369,7 +4369,7 @@ h6 {
   .timeline-steps .timeline-step:not(:last-child):after {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #93F6E3;
+    border-top: 0.25rem dotted #004260;
     width: 3.46rem;
     position: absolute;
     left: 7.5rem;
@@ -4377,7 +4377,7 @@ h6 {
   .timeline-steps .timeline-step:not(:first-child):before {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #93F6E3;
+    border-top: 0.25rem dotted #004260;
     width: 3.8125rem;
     position: absolute;
     right: 7.5rem;
@@ -4394,11 +4394,11 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #93F6E3; }
+  background-color: #004260; }
 
 .timeline-steps .timeline-content .inner-circle:before {
   content: "";
-  background-color: #CC8FF7;
+  background-color: #FF8C21;
   display: inline-block;
   height: 3rem;
   width: 3rem;
